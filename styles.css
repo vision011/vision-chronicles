@@ -25,7 +25,11 @@ html { scroll-behavior: smooth; }
 
 body {
   font-family: "Inter", system-ui, -apple-system, sans-serif;
-  background: linear-gradient(160deg, #eaf0f7 0%, #e6eaf5 45%, #e9e4f2 75%, #e2e9f2 100%) fixed;
+  background:
+    radial-gradient(1100px 700px at 88% -8%, rgba(109, 90, 224, .22), transparent 62%),
+    radial-gradient(900px 650px at -8% 108%, rgba(47, 179, 212, .20), transparent 60%),
+    radial-gradient(800px 500px at 55% 115%, rgba(212, 90, 184, .10), transparent 55%),
+    linear-gradient(160deg, #e9edf5 0%, #e4e2f2 55%, #dee8f2 100%) fixed;
   color: var(--ink);
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
