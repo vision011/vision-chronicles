@@ -4,59 +4,143 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Vision Chronicles</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<header>
-  <div class="logo">Vision <span>Chronicles</span></div>
-  <nav>
-    <ul>
-      <li><a href="index.html" class="active">Home</a></li>
-      <li><a href="index.html#videos">Videos</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
-  <a href="#" class="upload-btn">+ New Post</a>
-</header>
+<div class="shell">
 
-<section class="hero">
-  <h1>Stories, shot and told.</h1>
-  <p>A personal video chronicle — travel notes, project logs, and short films, all in one place. Every post pairs a video with the story behind it.</p>
-</section>
+  <aside class="sidebar">
+    <a class="brand" href="index.html">
+      <img class="brand-mark" src="assets/avatar.png" alt="Vision Chronicles avatar" onerror="this.onerror=null;this.src='assets/avatar-placeholder.svg'">
+      <div>
+        <div class="brand-name">Vision Chronicles</div>
+        <div class="brand-sub">Video Journal</div>
+      </div>
+    </a>
 
-<div class="filters">
-  <div class="filter-pill active">All</div>
-  <div class="filter-pill">Travel</div>
-  <div class="filter-pill">Projects</div>
-  <div class="filter-pill">Tutorials</div>
-  <div class="filter-pill">Vlog</div>
-</div>
-
-<main class="grid" id="videos">
-
-  <article class="card">
-    <div class="video-wrap" data-video-id="woLlKaFcSdc" style="background-image: url('https://img.youtube.com/vi/woLlKaFcSdc/hq2.jpg');" onclick="this.style.backgroundImage='none'; this.innerHTML = '&lt;iframe src=&quot;https://www.youtube.com/embed/' + this.dataset.videoId + '?autoplay=1&quot; title=&quot;Vision Chronicles video&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen&gt;&lt;/iframe&gt;';">
-      <div class="play-btn"></div>
+    <div class="nav-section">
+      <div class="nav-label">Navigate</div>
+      <a class="nav-item active" href="index.html">Home <span class="nav-icon">⌂</span></a>
+      <a class="nav-item" href="index.html#videos">Videos <span class="nav-icon">▸</span></a>
     </div>
-    <div class="card-body">
-      <div class="card-meta"><span class="tag">Vlog</span><span>July 2, 2026</span></div>
-      <h3>USA vs Bosnia: my first vlog</h3>
-      <p>Kicking off Vision Chronicles with the one that started it all — catching the USA-Bosnia game and figuring out how to actually make a video while I was at it.</p>
+
+    <div class="nav-section">
+      <div class="nav-label">My World</div>
+      <a class="nav-item" href="about.html">About <span class="nav-icon">✦</span></a>
+      <a class="nav-item" href="index.html#links">My Links <span class="nav-icon">⌁</span></a>
     </div>
-  </article>
 
-</main>
+    <div class="nav-section">
+      <div class="nav-label">Connect</div>
+      <a class="nav-item" href="mailto:salah.mohamoud.dev@gmail.com">Email me <span class="nav-icon">＠</span></a>
+      <a class="nav-item" href="contact.html">Contact <span class="nav-icon">✉</span></a>
+    </div>
 
-<div class="callout">
-  <strong>How this costs ~$0:</strong> the video above is uploaded to YouTube, then embedded here via a standard iframe. YouTube pays for storage, transcoding, and bandwidth. This page itself is a static HTML file, which can be hosted free on GitHub Pages, Cloudflare Pages, or Netlify. The only optional cost is a custom domain name, typically $10–15/year.
+    <div class="sidebar-footer">
+      <a class="subscribe-btn" href="mailto:salah.mohamoud.dev@gmail.com?subject=Subscribe%20to%20Vision%20Chronicles">Subscribe</a>
+      <div class="sidebar-credit">© 2026 Vision Chronicles</div>
+    </div>
+  </aside>
+
+  <main class="main">
+
+    <section class="hero-card">
+      <div class="hero-media">
+        <img src="assets/avatar.png" alt="Salah — Vision Chronicles" onerror="this.onerror=null;this.src='assets/avatar-placeholder.svg'">
+      </div>
+      <div class="hero-body">
+        <h1>Hey! I'm Salah.</h1>
+        <p>Vision Chronicles is my video journal — travel notes, project logs, and short films, each one paired with the story behind it. I'm teaching myself cinematography in public, one post at a time.</p>
+        <div class="newsletter">
+          <div class="newsletter-label">Get new videos in your inbox</div>
+          <form class="newsletter-form" action="mailto:salah.mohamoud.dev@gmail.com" method="get">
+            <input type="email" placeholder="Enter your email" aria-label="Email address">
+            <button class="btn" type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="videos">
+      <div class="section-head">
+        <h2>Videos</h2>
+        <a class="view-more" href="#videos">View more →</a>
+      </div>
+
+      <div class="filters">
+        <div class="filter-pill active">All</div>
+        <div class="filter-pill">Travel</div>
+        <div class="filter-pill">Projects</div>
+        <div class="filter-pill">Tutorials</div>
+        <div class="filter-pill">Vlog</div>
+      </div>
+
+      <div class="grid">
+        <article class="card">
+          <div class="video-wrap" data-video-id="woLlKaFcSdc" style="background-image: url('https://img.youtube.com/vi/woLlKaFcSdc/hq2.jpg');" onclick="this.style.backgroundImage='none'; this.innerHTML = '&lt;iframe src=&quot;https://www.youtube.com/embed/' + this.dataset.videoId + '?autoplay=1&quot; title=&quot;Vision Chronicles video&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen&gt;&lt;/iframe&gt;';">
+            <div class="play-btn"></div>
+          </div>
+          <div class="card-body">
+            <div class="card-meta"><span class="tag">Vlog</span><span>July 2, 2026</span></div>
+            <h3>USA vs Bosnia: my first vlog</h3>
+            <p>Kicking off Vision Chronicles with the one that started it all — catching the USA-Bosnia game and figuring out how to actually make a video while I was at it.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="links">
+      <div class="section-head">
+        <h2>My Links</h2>
+      </div>
+      <div class="links-grid">
+        <a class="link-card" href="mailto:salah.mohamoud.dev@gmail.com">
+          <div class="link-icon">＠</div>
+          <div>
+            <div class="link-title">Email</div>
+            <div class="link-sub">salah.mohamoud.dev@gmail.com</div>
+          </div>
+        </a>
+        <a class="link-card" href="https://www.youtube.com" target="_blank" rel="noopener">
+          <div class="link-icon">▶</div>
+          <div>
+            <div class="link-title">YouTube</div>
+            <div class="link-sub">where the videos live</div>
+          </div>
+        </a>
+        <a class="link-card" href="contact.html">
+          <div class="link-icon">✉</div>
+          <div>
+            <div class="link-title">Contact</div>
+            <div class="link-sub">feedback &amp; collabs</div>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <section class="cta-banner">
+      <div>
+        <h2>Open to collabs and ideas</h2>
+        <p>If you've got a project, a shot idea, or feedback on a video — I'd love to hear it.</p>
+      </div>
+      <a class="btn btn-light" href="contact.html">Let's work together</a>
+    </section>
+
+    <div class="callout">
+      <strong>How this costs ~$0:</strong> videos are uploaded to YouTube and embedded here via a standard iframe — YouTube pays for storage, transcoding, and bandwidth. This page is a static HTML file, hostable free on GitHub Pages, Cloudflare Pages, or Netlify. The only optional cost is a custom domain, typically $10–15/year.
+    </div>
+
+    <footer class="main-footer">
+      <span>© 2026 Vision Chronicles</span>
+      <span>Built as a static site · videos hosted on YouTube (unlisted)</span>
+    </footer>
+
+  </main>
 </div>
-
-<footer>
-  <span>© 2026 Vision Chronicles</span>
-  <span>Built as a static site · videos hosted on YouTube (unlisted)</span>
-</footer>
 
 </body>
 </html>

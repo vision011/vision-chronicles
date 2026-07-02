@@ -4,39 +4,66 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>About — Vision Chronicles</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<header>
-  <div class="logo">Vision <span>Chronicles</span></div>
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="index.html#videos">Videos</a></li>
-      <li><a href="about.html" class="active">About</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
-  <a href="#" class="upload-btn">+ New Post</a>
-</header>
+<div class="shell">
 
-<section class="hero">
-  <h1>About</h1>
-  <p>Why this exists, and where it's going.</p>
-</section>
+  <aside class="sidebar">
+    <a class="brand" href="index.html">
+      <img class="brand-mark" src="assets/avatar.png" alt="Vision Chronicles avatar" onerror="this.onerror=null;this.src='assets/avatar-placeholder.svg'">
+      <div>
+        <div class="brand-name">Vision Chronicles</div>
+        <div class="brand-sub">Video Journal</div>
+      </div>
+    </a>
 
-<div class="page-content">
-  <p>I'm Salah. I want to get into cinematography — not just watch films and admire the shots, but actually learn how to make them. Vision Chronicles is where that starts.</p>
-  <p>I don't have a crew, a real camera rig, or years of training. What I have is a phone, an eye I'm trying to train, and a willingness to post the early, rough stuff instead of waiting until it's "good enough." So this is a journal as much as it's a portfolio — every video here is a step, not a finished product.</p>
-  <p>The first post is proof of that: a shaky, unplanned clip from the USA-Bosnia game, because the whole point was to just start. From here, the plan is to keep showing up, keep filming, and let the work get better in public instead of in private.</p>
-  <p>If you're here early, thanks for watching me figure this out.</p>
+    <div class="nav-section">
+      <div class="nav-label">Navigate</div>
+      <a class="nav-item" href="index.html">Home <span class="nav-icon">⌂</span></a>
+      <a class="nav-item" href="index.html#videos">Videos <span class="nav-icon">▸</span></a>
+    </div>
+
+    <div class="nav-section">
+      <div class="nav-label">My World</div>
+      <a class="nav-item active" href="about.html">About <span class="nav-icon">✦</span></a>
+      <a class="nav-item" href="index.html#links">My Links <span class="nav-icon">⌁</span></a>
+    </div>
+
+    <div class="nav-section">
+      <div class="nav-label">Connect</div>
+      <a class="nav-item" href="mailto:salah.mohamoud.dev@gmail.com">Email me <span class="nav-icon">＠</span></a>
+      <a class="nav-item" href="contact.html">Contact <span class="nav-icon">✉</span></a>
+    </div>
+
+    <div class="sidebar-footer">
+      <a class="subscribe-btn" href="mailto:salah.mohamoud.dev@gmail.com?subject=Subscribe%20to%20Vision%20Chronicles">Subscribe</a>
+      <div class="sidebar-credit">© 2026 Vision Chronicles</div>
+    </div>
+  </aside>
+
+  <main class="main">
+
+    <section class="page-card">
+      <h1>About</h1>
+      <div class="page-kicker">Why this exists, and where it's going.</div>
+      <p>I'm Salah. I want to get into cinematography — not just watch films and admire the shots, but actually learn how to make them. Vision Chronicles is where that starts.</p>
+      <p>I don't have a crew, a real camera rig, or years of training. What I have is a phone, an eye I'm trying to train, and a willingness to post the early, rough stuff instead of waiting until it's "good enough." So this is a journal as much as it's a portfolio — every video here is a step, not a finished product.</p>
+      <p>The first post is proof of that: a shaky, unplanned clip from the USA-Bosnia game, because the whole point was to just start. From here, the plan is to keep showing up, keep filming, and let the work get better in public instead of in private.</p>
+      <p>If you're here early, thanks for watching me figure this out.</p>
+    </section>
+
+    <footer class="main-footer">
+      <span>© 2026 Vision Chronicles</span>
+      <span>Built as a static site · videos hosted on YouTube (unlisted)</span>
+    </footer>
+
+  </main>
 </div>
-
-<footer>
-  <span>© 2026 Vision Chronicles</span>
-  <span>Built as a static site · videos hosted on YouTube (unlisted)</span>
-</footer>
 
 </body>
 </html>
