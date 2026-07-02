@@ -25,7 +25,7 @@ html { scroll-behavior: smooth; }
 
 body {
   font-family: "Inter", system-ui, -apple-system, sans-serif;
-  background: var(--bg);
+  background: linear-gradient(160deg, #eaf0f7 0%, #e6eaf5 45%, #e9e4f2 75%, #e2e9f2 100%) fixed;
   color: var(--ink);
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
